@@ -1,0 +1,14 @@
+price = int(input("Сколько вы платите:"))
+
+coins = 0
+values = [25, 10, 5, 1]
+index = 0
+
+while index < len(values):
+    coins += price // values[index]
+
+    price %= values[index]
+
+    index += 1
+
+print(f"Так и будет:{coins}")
