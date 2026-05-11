@@ -1,0 +1,17 @@
+count = 0
+start = False
+
+while True:
+    name = input()
+
+    if name == "Александра":
+        start = True
+        continue
+
+    if name == "Левон":
+        break
+
+    if start:
+        count += 1
+
+print(count)
